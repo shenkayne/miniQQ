@@ -2,7 +2,7 @@ package com.common;
 
 import java.util.Hashtable;
 
-import com.tools.ClientToServerThread;
+import com.controller.ClientToServerThread;
 
 
 /**

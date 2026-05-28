@@ -23,9 +23,9 @@ import javax.swing.JTextField;
 import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
 
-import com.client.business.resourceManager.ResourceManager;
-import com.client.business.uiManager.Login;
-import com.tools.ClientToServer;
+import com.client.model.resourceManager.ResourceManager;
+import com.client.model.uiManager.Login;
+import com.controller.ClientToServer;
 import com.common.User;
 /**
  * µÇÂ¼½çÃæ

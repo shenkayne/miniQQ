@@ -15,9 +15,9 @@ import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 
-import com.client.business.uiManager.ChatPanel;
+import com.client.model.uiManager.ChatPanel;
 import com.common.Message;
-import com.tools.ClientToServerThread;
+import com.controller.ClientToServerThread;
 
 public class ServerTest extends JFrame{
 	
@@ -180,8 +180,8 @@ public void chuanshu(){
 			}
 		}
 	}
-	public static void main(String arg[]) {
-	//	new ServerTest();
-	}
+//	public static void main(String arg[]) {
+//	//	new ServerTest();
+//	}
 	
 }

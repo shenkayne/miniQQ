@@ -22,19 +22,19 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import com.client.business.resourceManager.ResourceManager;
-import com.client.business.uiManager.Getpwd;
-import com.client.business.uiManager.Register;
+import com.client.model.resourceManager.ResourceManager;
+import com.client.model.uiManager.Getpwd;
+import com.client.model.uiManager.Register;
 import com.common.UserInfoBean;
 
 
 public class JGetBackPwdFrm extends JFrame implements ActionListener, ItemListener {
 
-    public static void main(String[] args) {
-
-
-        new JGetBackPwdFrm(10001, true);
-    }
+//    public static void main(String[] args) {
+//
+//
+//        new JGetBackPwdFrm(10001, true);
+//    }
 
     private static final long serialVersionUID = 1L;
     BackgroundPanel contentPanel = new BackgroundPanel();

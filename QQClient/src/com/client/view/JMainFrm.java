@@ -1,15 +1,10 @@
 package com.client.view;
 
-import java.awt.AWTException;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
-import java.awt.MenuItem;
-import java.awt.PopupMenu;
-import java.awt.SystemTray;
 import java.awt.Toolkit;
-import java.awt.TrayIcon;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
@@ -25,19 +20,19 @@ import java.util.Hashtable;
 import javax.swing.*;
 import javax.swing.tree.TreePath;
 
-import com.client.business.mainRender.ColorConvertOp;
-import com.client.business.mainRender.CombListRenderer;
+import com.client.model.mainRender.ColorConvertOp;
+import com.client.model.mainRender.CombListRenderer;
 
-import com.client.business.mainRender.IconNodeRenderer;
-import com.client.business.mainRender.InformationFrm;
-import com.client.business.mainRender.MyTreeUI1;
-import com.client.business.mainRender.findFriendFrm;
-import com.client.business.uiManager.Login;
-import com.tools.ClientToServer;
+import com.client.model.mainRender.IconNodeRenderer;
+import com.client.model.mainRender.InformationFrm;
+import com.client.model.mainRender.MyTreeUI1;
+import com.client.model.mainRender.findFriendFrm;
+import com.client.model.uiManager.Login;
+import com.controller.ClientToServer;
 import com.common.Port;
 import com.common.UserInfoBean;
-import com.tools.ClientToServerThread;
-import com.client.business.mainRender.IconNode;
+import com.controller.ClientToServerThread;
+import com.client.model.mainRender.IconNode;
 
 
 public class JMainFrm extends JFrame {

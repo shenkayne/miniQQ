@@ -180,32 +180,32 @@ public class ClientTest extends JFrame{
 				return;
 		}
 	}
-	public static void main(String arg[]) {
-		JFrame frame=new JFrame();
-		JButton transformButton;
-		String ip = "192.16.137.2";
-		final ClientTest client=new ClientTest(ip);
-		//初始化窗体
-		frame.setBounds(300, 200, 400, 300);		
-		frame.setLayout(null);	
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//初始化按钮
-		transformButton=new JButton("接收文件");
-		transformButton.addActionListener(new ActionListener(){
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				// TODO Auto-generated method stub
-				client.jieshou_do();
-			}});
-		transformButton.setBounds(0, 0, 160, 40);
-		transformButton.setLocation(frame.getWidth()/2, frame.getHeight()/2);
-		
-		transformButton.setVisible(true);
-		frame.add(transformButton);
-		
-		frame.setVisible(true);
-		//String ip = "192.16.137.3";
-		new ClientTest(ip);
-	}
+//	public static void main(String arg[]) {
+//		JFrame frame=new JFrame();
+//		JButton transformButton;
+//		String ip = "192.16.137.2";
+//		final ClientTest client=new ClientTest(ip);
+//		//初始化窗体
+//		frame.setBounds(300, 200, 400, 300);
+//		frame.setLayout(null);
+//		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//		//初始化按钮
+//		transformButton=new JButton("接收文件");
+//		transformButton.addActionListener(new ActionListener(){
+//
+//			@Override
+//			public void actionPerformed(ActionEvent e) {
+//				// TODO Auto-generated method stub
+//				client.jieshou_do();
+//			}});
+//		transformButton.setBounds(0, 0, 160, 40);
+//		transformButton.setLocation(frame.getWidth()/2, frame.getHeight()/2);
+//
+//		transformButton.setVisible(true);
+//		frame.add(transformButton);
+//
+//		frame.setVisible(true);
+//		//String ip = "192.16.137.3";
+//		new ClientTest(ip);
+//	}
 }

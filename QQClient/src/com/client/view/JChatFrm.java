@@ -11,13 +11,29 @@ import java.awt.event.WindowEvent;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
-import com.client.business.uiManager.ChatPanel;
+import com.client.model.uiManager.ChatPanel;
 import com.client.chat.PicsJWindow;
 import com.client.data.LoadImages;
 import com.common.UserInfoBean;
-import com.tools.ClientToServerThread;
+import com.controller.ClientToServerThread;
 
 public class JChatFrm extends JFrame implements ActionListener {
+//    public static void main(String[] args) {
+//        String sendIP = "127.0.0.1";
+//        String receiveIP = "127.0.0.1";
+//        UserInfoBean user = new UserInfoBean();
+//        UserInfoBean friend = new UserInfoBean();
+//
+//        user.setIP(sendIP);
+//        user.setQq(10003);
+//        user.setNickname("是沈才人呀");
+//        user.setSign("坚持就是胜利!");
+//        friend.setIP(receiveIP);
+//        friend.setQq(10005);
+//        friend.setNickname("是小小西瓜呀");
+//        JChatFrm jChatFrm = new JChatFrm(user, friend);
+//        jChatFrm.setVisible(true);
+//    }
 
     private static final long serialVersionUID = 1L;
     public ChatPanel chatpanel;
@@ -105,26 +121,6 @@ public class JChatFrm extends JFrame implements ActionListener {
     public void closeWindow() {
         this.dispose();
 
-    }
-
-    /**
-     * @param args
-     */
-    public static void main(String[] args) {
-        String sendIP = "127.0.0.1";
-        String receiveIP = "127.0.0.1";
-        UserInfoBean user = new UserInfoBean();
-        UserInfoBean friend = new UserInfoBean();
-
-        user.setIP(sendIP);
-        user.setQq(10003);
-        user.setNickname("是沈才人呀");
-        user.setSign("坚持就是胜利!");
-        friend.setIP(receiveIP);
-        friend.setQq(10005);
-        friend.setNickname("是小小西瓜呀");
-        JChatFrm jChatFrm = new JChatFrm(user, friend);
-        jChatFrm.setVisible(true);
     }
 
 

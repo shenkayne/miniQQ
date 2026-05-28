@@ -16,20 +16,17 @@ import java.util.Map;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
-import javax.swing.JDialog;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JRadioButton;
-import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 
-import com.client.business.resourceManager.ResourceManager;
-import com.client.business.uiManager.ComboBoxRenderer;
-import com.client.business.uiManager.Register;
+import com.client.model.resourceManager.ResourceManager;
+import com.client.model.uiManager.ComboBoxRenderer;
 import com.common.UserInfoBean;
 
 
@@ -68,16 +65,16 @@ public class JRegisterFrm extends JFrame implements ActionListener,ItemListener{
 	JButton btn_findpwd;
 	JComboBox comboBox_icon;
 
-	public static void main(String[] args) {
-	try {
-		JLoginFrm jLoginFrm = new JLoginFrm();
-		JRegisterFrm dialog = new JRegisterFrm(jLoginFrm);
-			dialog.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);//dispose-window默认的窗口关闭操作
-			dialog.setVisible(true);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-	}
+//	public static void main(String[] args) {
+//	try {
+//		JLoginFrm jLoginFrm = new JLoginFrm();
+//		JRegisterFrm dialog = new JRegisterFrm(jLoginFrm);
+//			dialog.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);//dispose-window默认的窗口关闭操作
+//			dialog.setVisible(true);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
+//	}
 
 	public JRegisterFrm(JFrame frame) {
 		this.frame=frame;

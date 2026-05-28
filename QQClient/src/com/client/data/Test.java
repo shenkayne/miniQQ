@@ -1,6 +1,6 @@
 package com.client.data;
 
-import com.tools.ClientToServer;
+import com.controller.ClientToServer;
 
 /**
  * @Author Ð¡Ð¡Î÷¹Ï

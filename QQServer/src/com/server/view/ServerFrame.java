@@ -7,9 +7,9 @@ package com.server.view;
  */
 
 import com.common.UserInfoBean;
-import com.server.data.ConnectionFactory;
-import com.tools.ServerThread;
-import com.tools.ServerToClientThread;
+import com.server.service.ConnectionFactory;
+import com.controller.ServerThread;
+import com.controller.ServerToClientThread;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -130,7 +130,7 @@ public class ServerFrame extends JFrame implements ActionListener{
 
         timeLabel.setBorder(null);
         timeLabel.setHorizontalAlignment(SwingConstants.RIGHT);
-        timeLabel.setText("jLabel1");
+        timeLabel.setText("当前时间（后面补上）");
         jPanel2.setLayout(gridBagLayout2);
         jLabel1.setMaximumSize(new Dimension(82, 50));
         jLabel1.setPreferredSize(new Dimension(82, 25));
@@ -224,8 +224,13 @@ public class ServerFrame extends JFrame implements ActionListener{
             QQNUM = new Integer(selectedUser.substring(selectedUser.indexOf("(") + 1, selectedUser.indexOf(")")));
             //根据好友的QQ号查找好友的信息类
             UserInfoBean user = (UserInfoBean)userTable.get(QQNUM);
-            UserInfo userInfo = new UserInfo(this,"用户的基本信息",user);
-            userInfo.setVisible(true);
+            String userdetail= null;
+            try {
+                userdetail = "用户名为："+user.getNickname()+"密码为："+user.getPwd();
+            } catch (NullPointerException ex) {
+                System.out.println("查询消息时空指针异常了");
+            }
+            JOptionPane.showMessageDialog(this,userdetail,"用户具体信息",JOptionPane.INFORMATION_MESSAGE);
         }
     }
 
